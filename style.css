@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(135deg, rgb(173, 228, 250), rgb(2, 146, 194));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.322);
+    position: absolute;
+}
+
+.shape1{
+    height: 90px;
+    width: 90px;
+    left: 529px;
+    top: 373px;
+}
+
+.shape2{
+    height: 120px;
+    width: 120px;
+    left: 762px;
+    top: 200px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    width: 240px;
+}
+
+.inputCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+    margin: 0px 10px;
+}
+
+#cityInput{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid rgba(36, 167, 207, 0.575);
+    margin: 0 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    padding: 5px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+#cityInput::placeholder{
+    color: rgba(255, 255, 255, 0.651);
+}
+
+#searchBtn{
+    background-color: rgba(0, 191, 255, 0.61);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 8px;
+    margin-bottom: 8px;
+    color: white;
+    margin-right: 10px;
+}
+
+#searchBtn:hover{
+    background-color: rgba(2, 157, 209, 0.61);
+}
+
+#resultCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#cityName{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+#main{
+    margin: 5px;
+    color: rgb(230, 248, 255);
+    text-transform: capitalize;
+}
+
+#desc{
+    margin-bottom: 5px;
+    color: rgb(230, 248, 255);
+    text-transform: capitalize;
+}
+
+#mainTemp{
+    color: white;
+}
+
+.tempSm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#minTemp{
+    border-right: 1px solid lightblue;
+    padding: 9px;
+    color: rgb(230, 248, 255);
+}
+
+.text{
+    font-size: 15px;
+    text-align: center;
+}
+
+#maxTemp{
+    border-left: 1px solid lightblue;
+    padding: 9px;
+    color: rgb(230, 248, 255);
+}
+
+.emptyErr{
+    color: white;
+    font-weight: 400;
+}
